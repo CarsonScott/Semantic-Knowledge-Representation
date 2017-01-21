@@ -1,2 +1,2 @@
-# Semantic-Knowledge-Representation
+# Semantic Knowledge Representation
 A graph that represents semantic knowledge.
