@@ -47,4 +47,4 @@ A property is a label that describes some aspect of an element or relation. Each
         Element rectangle = representation.createElementFromType(0);
         circle.state[0] = 2;
         circle.state[1] = 2;
-        representation.addElement(circle);
+        representation.addElement(rectangle);
