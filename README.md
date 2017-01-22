@@ -23,13 +23,15 @@ A property is a label that describes some aspect of an element or relation. Each
         properties.append("green", 1);
         
 - Create the representation and define a "colored shape" type
+
         Representation representation(properties);
         std::vector<int> type;
         type.push_back(0);
         type.push_back(1);
         representation.addType(type);
         
-- Create the elements
+- Define the elements
+
         Element circle = representation.createElementFromType(0);
         circle.state[0] = 0;
         circle.state[1] = 0;
