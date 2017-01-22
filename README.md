@@ -22,10 +22,8 @@ A property is a label that describes some aspect of an element or relation. Each
         properties.append("red", 1);
         properties.append("green", 1);
         
+- Create the representation and define a "colored shape" type
         Representation representation(properties);
-        
-- Create a "colored shape" type
-        
         std::vector<int> type;
         type.push_back(0);
         type.push_back(1);
