@@ -1,2 +1,2 @@
 # Semantic Knowledge Representation
-A graph that represents semantic knowledge.
+A graph library that models semantic information.
