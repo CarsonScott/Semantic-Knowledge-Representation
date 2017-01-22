@@ -7,8 +7,10 @@
 class Representation
 {
     Properties properties;
+    std::vector<std::vector<int>> types;
     std::vector<Element> elements;
     std::vector<Relation> relations;
+
 public:
     Representation(){}
 
@@ -20,6 +22,22 @@ public:
     Representation(Properties p)
     {
         setProperties(p);
+    }
+
+    void addType(std::vector<int> p)
+    {
+        types.push_back(p);
+    }
+
+    Element createElementFromType(int type)
+    {
+        Element element;
+        element.properties = types[type];
+        for(int i = 0; i < element.properties.size(); i++)
+        {
+            element.state.push_back(0);
+        }
+        return element;
     }
 
     void setElements(std::vector<Element> e)
